@@ -351,8 +351,8 @@ void gamma_corrected(const float gamma, PPM::PPMObject & ppmFile) {
 }
 
 int main(int argc, char* argv[]) {
-    PPM::PPMObject * image1 = readPPM(std::string("Mandrill.ppm"));
-    PPM::PPMObject * image2 = readPPM(std::string("tandon_stacked_color.ppm"));
+    PPM::PPMObject * image1 = readPPM(std::string("../Mandrill.ppm"));
+    PPM::PPMObject * image2 = readPPM(std::string("../tandon_stacked_color.ppm"));
     addPPM("add.ppm", *image1, *image2);
     additionPPM("addition.ppm", *image1, *image2);
     substractPPM("substract.ppm", *image1, *image2);
