@@ -3,7 +3,7 @@
 #include <string>
 #include <cmath>
 #include <exception>
-#include "boost/algorithm/clamp.hpp"
+#include <algorithm>
 #include "PPM.h"
 
 PPM::PPMObject *readPPM(const std::string &filename){
@@ -179,16 +179,16 @@ void subtractPPM(const std::string &filename, const PPM::PPMObject &image1, cons
             << image1.mMax << "\n";
         if(image1.PType.compare("P3") == 0){
             for(int i = 0; i < image1.size; i ++){
-                savePPMFile << boost::algorithm::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[0]) - static_cast<__int16_t>(image2.mPixels[i].rgb[0]), 0, image1.mMax) << std::endl;
-                savePPMFile << boost::algorithm::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[1]) - static_cast<__int16_t>(image2.mPixels[i].rgb[1]), 0, image1.mMax) << std::endl;
-                savePPMFile << boost::algorithm::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[2]) - static_cast<__int16_t>(image2.mPixels[i].rgb[2]), 0, image1.mMax) << std::endl;
+                savePPMFile << std::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[0]) - static_cast<__int16_t>(image2.mPixels[i].rgb[0]), 0, image1.mMax) << std::endl;
+                savePPMFile << std::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[1]) - static_cast<__int16_t>(image2.mPixels[i].rgb[1]), 0, image1.mMax) << std::endl;
+                savePPMFile << std::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[2]) - static_cast<__int16_t>(image2.mPixels[i].rgb[2]), 0, image1.mMax) << std::endl;
             }
         }
         else if(image1.PType.compare("P6") == 0){
             for(int i = 0; i < image1.size; i ++){
-                char a = image1.mBins[i].pix[0] - image2.mBins[i].pix[0] / 2;
-                char b = image1.mBins[i].pix[1] - image2.mBins[i].pix[1] / 2;
-                char c = image1.mBins[i].pix[2] - image2.mBins[i].pix[2] / 2;
+                char a = image1.mBins[i].pix[0] - image2.mBins[i].pix[0];
+                char b = image1.mBins[i].pix[1] - image2.mBins[i].pix[1];
+                char c = image1.mBins[i].pix[2] - image2.mBins[i].pix[2];
                 savePPMFile.write((char*) &a, sizeof(unsigned char));
                 savePPMFile.write((char*) &b, sizeof(unsigned char));
                 savePPMFile.write((char*) &c, sizeof(unsigned char));
@@ -196,7 +196,7 @@ void subtractPPM(const std::string &filename, const PPM::PPMObject &image1, cons
         }
         else if(image1.PType.compare("P2") == 0){
             for(int i = 0; i < image1.size; i ++){
-                savePPMFile << static_cast<__int16_t>(image1.mPixels[i].rgb[0])  + static_cast<__int16_t>(image2.mPixels[i].rgb[0])<< std::endl;
+                savePPMFile << std::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[0]) - static_cast<__int16_t>(image2.mPixels[i].rgb[0]), 0, image1.mMax) << std::endl;
             }
         }
         else if(image1.PType.compare("P5") == 0){
