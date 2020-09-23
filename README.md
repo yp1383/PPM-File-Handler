@@ -39,7 +39,7 @@ additionPPM:
 
 subtractPPM:  
    
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/substract.jpg)   
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/subtract.jpg)   
   
 multiByScalePPM:    
    
