@@ -27,21 +27,29 @@ Let's see what these functions do!!!
 
 
 addPPM:  
-   
+  
+addPPM("out_file.ppm", image1, iamge2);  
+    
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/add.jpg)  
   
   
   
 additionPPM:  
   
+additionPPM("out_file.ppm", image1, iamge2);
+  
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/addition.jpg)  
   
 
 subtractPPM:  
    
+subtractPPM("out_file.ppm", image1, iamge2);
+  
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/subtract.jpg)   
   
 multiByScalePPM:    
+  
+multiByScalePPM("out_file.ppm", image1, scale);
    
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/multi.jpg)  
   
@@ -65,6 +73,8 @@ gamma_corrected for(0.25f):
   
   
 alphaCompositing:  
+  
+alphaCompositingPPM("out_file", image1, alpha1, image2, alpha2)
   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/alpha.jpg)  
   
