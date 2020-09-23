@@ -180,6 +180,8 @@ void subtractPPM(const std::string &filename, const PPM::PPMObject &image1, cons
             << image1.mMax << "\n";
         if(image1.PType.compare("P3") == 0){
             for(int i = 0; i < image1.size; i ++){
+//              std::clamp is not working on my pc,so I include boost::algorithm 
+//              can use boost::algorithm::clamp to replace std::clamp
                 savePPMFile << std::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[0]) - static_cast<__int16_t>(image2.mPixels[i].rgb[0]), 0, image1.mMax) << std::endl;
                 savePPMFile << std::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[1]) - static_cast<__int16_t>(image2.mPixels[i].rgb[1]), 0, image1.mMax) << std::endl;
                 savePPMFile << std::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[2]) - static_cast<__int16_t>(image2.mPixels[i].rgb[2]), 0, image1.mMax) << std::endl;
