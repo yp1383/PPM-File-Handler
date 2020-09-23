@@ -13,7 +13,7 @@ and
 
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/tandon_stacked_color.jpg)
 
-There are several functions in image.cpp:
+There are several functions in image.cpp:  
 0.loadPPM and savePPM.
 1. addPPM
 2. additionPPM
