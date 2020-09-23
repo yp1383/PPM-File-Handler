@@ -21,7 +21,7 @@ Basic: loadPPM and savePPM.
 3. subtractPPM
 4. multiByScalePPM
 5. gamma_corrected
-6. aplhaCompositingPPM
+6. alphaCompositingPPM
 
 Let's see what these functions do!!!
 
@@ -64,7 +64,7 @@ gamma_corrected for(0.25f):
   
   
   
-aplhaCompositing:  
+alphaCompositing:  
   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/alpha.jpg)  
   
