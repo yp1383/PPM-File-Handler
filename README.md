@@ -25,86 +25,87 @@ There are several functions in image.cpp:
 Let's see what these functions do!!!
 
 
-addPPM:
-.
-.
-.
-wait for the magic!!
-.
-.
-.
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/add.jpg)
-
-Amazing!!
-
-
-
-additionPPM:
-.
-.
-.
-wait for the magic!!
-.
-.
-.
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/addition.jpg)
-
-Amazing!!
-
-
-
-subtractPPM:
-.
-.
-.
-wait for the magic!!
-.
-.
-.
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/subtract.jpg)
-
-Amazing!!
-
-
-multiByScalePPM:
-.
-.
-.
-wait for the magic!!
-.
-.
-.
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/multi.jpg)
-
-Amazing!!
-
-
-gamma_corrected for(4.f):
-
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/first.jpg)
-
-gamma_corrected for(0.25f):
-
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/second.jpg)
-
-
-Which proof that gamma correction is not linear
-Just for extra fun, let's run it one more time!
-
-gamma_corrected for(0.25f):
-
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/third.jpg)
-
-
-
-aplhaCompositing:
-.
-.
-.
-wait for the magic!!
-.
-.
-.
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/alpha.jpg)
-
-Amazing!!
+addPPM:  
+.  
+.  
+.  
+wait for the magic!!  
+.  
+.  
+.  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/add.jpg)  
+  
+Amazing!!  
+  
+  
+  
+additionPPM:  
+.  
+.  
+.  
+wait for the magic!!  
+.  
+.  
+.  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/addition.jpg)  
+  
+Amazing!!  
+  
+  
+  
+subtractPPM:  
+.  
+.  
+.  
+wait for the magic!!  
+.  
+.  
+.  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/subtract.jpg)  
+  
+Amazing!!  
+  
+  
+multiByScalePPM:    
+.  
+.  
+.  
+wait for the magic!!  
+.  
+.  
+.  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/multi.jpg)  
+  
+Amazing!!  
+  
+  
+gamma_corrected for(4.f):  
+  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/first.jpg)  
+  
+gamma_corrected for(0.25f):  
+  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/second.jpg)  
+  
+  
+Which proof that gamma correction is not linear  
+Just for extra fun, let's run it one more time!  
+  
+gamma_corrected for(0.25f):  
+  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/third.jpg)  
+  
+  
+  
+aplhaCompositing:  
+.  
+.  
+.  
+wait for the magic!!  
+.  
+.  
+.  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/alpha.jpg)  
+  
+Amazing!!  
+  
