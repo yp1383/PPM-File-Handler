@@ -26,59 +26,25 @@ Let's see what these functions do!!!
 
 
 addPPM:  
-.  
-.  
-.  
-wait for the magic!!  
-.  
-.  
-.  
+   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/add.jpg)  
-  
-Amazing!!  
   
   
   
 additionPPM:  
-.  
-.  
-.  
-wait for the magic!!  
-.  
-.  
-.  
+  
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/addition.jpg)  
   
-Amazing!!  
-  
-  
-  
+
 subtractPPM:  
-.  
-.  
-.  
-wait for the magic!!  
-.  
-.  
-.  
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/subtract.jpg)  
-  
-Amazing!!  
-  
+   
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/subtract.jpg)   
   
 multiByScalePPM:    
-.  
-.  
-.  
-wait for the magic!!  
-.  
-.  
-.  
+   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/multi.jpg)  
   
-Amazing!!  
-  
-  
+   
 gamma_corrected for(4.f):  
   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/first.jpg)  
@@ -98,14 +64,6 @@ gamma_corrected for(0.25f):
   
   
 aplhaCompositing:  
-.  
-.  
-.  
-wait for the magic!!  
-.  
-.  
-.  
-![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/alpha.jpg)  
   
-Amazing!!  
+![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/alpha.jpg)  
   
