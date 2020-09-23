@@ -4,6 +4,7 @@
 #include <cmath>
 #include <exception>
 #include <algorithm>
+#include "boost/algorithm/clamp.h"
 #include "PPM.h"
 
 PPM::PPMObject *readPPM(const std::string &filename){
