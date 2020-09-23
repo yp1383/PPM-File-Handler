@@ -156,7 +156,7 @@ void additionPPM(const std::string &filename, const PPM::PPMObject &image1, cons
         }
         else if(image1.PType.compare("P2") == 0){
             for(int i = 0; i < image1.size; i ++){
-                savePPMFile << static_cast<unsigned int>(image1.mPixels[i].rgb[0])  + static_cast<unsigned int>(image2.mPixels[i].rgb[0])<< std::endl;
+                savePPMFile << static_cast<unsigned int>(image1.mPixels[i].rgb[0]) / 2  + static_cast<unsigned int>(image2.mPixels[i].rgb[0]) / 2<< std::endl;
             }
         }
         else if(image1.PType.compare("P5") == 0){
