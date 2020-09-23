@@ -28,7 +28,7 @@ Let's see what these functions do!!!
 
 addPPM:  
   
-addPPM("out_file.ppm", image1, iamge2);  
+addPPM("out_file.ppm", image1, image2);  
     
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/add.jpg)  
   
@@ -36,14 +36,14 @@ addPPM("out_file.ppm", image1, iamge2);
   
 additionPPM:  
   
-additionPPM("out_file.ppm", image1, iamge2);
+additionPPM("out_file.ppm", image1, image2);
   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/addition.jpg)  
   
 
 subtractPPM:  
    
-subtractPPM("out_file.ppm", image1, iamge2);
+subtractPPM("out_file.ppm", image1, image2);
   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/subtract.jpg)   
   
@@ -56,9 +56,13 @@ multiByScalePPM("out_file.ppm", image1, scale);
    
 gamma_corrected for(4.f):  
   
+gamma_corrected(4.f, image1);  
+    
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/first.jpg)  
   
 gamma_corrected for(0.25f):  
+  
+gamma_corrected(0.25f, image1);  
   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/second.jpg)  
   
@@ -67,6 +71,8 @@ Which proof that gamma correction is not linear
 Just for extra fun, let's run it one more time!  
   
 gamma_corrected for(0.25f):  
+  
+gamma_corrected(0.25f, image1);
   
 ![image](https://github.com/nyu-cs-cy-6533-fall-2020/assignment-1-yp1383/blob/master/images/third.jpg)  
   
