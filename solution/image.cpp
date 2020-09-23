@@ -179,9 +179,9 @@ void subtractPPM(const std::string &filename, const PPM::PPMObject &image1, cons
             << image1.mMax << "\n";
         if(image1.PType.compare("P3") == 0){
             for(int i = 0; i < image1.size; i ++){
-                savePPMFile << boost::algorithm::clamp(static_cast<unsigned int>(image1.mPixels[i].rgb[0]) - static_cast<unsigned int>(image2.mPixels[i].rgb[0]), 0, image1.mMax) << std::endl;
-                savePPMFile << boost::algorithm::clamp(static_cast<unsigned int>(image1.mPixels[i].rgb[1]) - static_cast<unsigned int>(image2.mPixels[i].rgb[1]), 0, image1.mMax) << std::endl;
-                savePPMFile << boost::algorithm::clamp(static_cast<unsigned int>(image1.mPixels[i].rgb[2]) - static_cast<unsigned int>(image2.mPixels[i].rgb[2]), 0, image1.mMax) << std::endl;
+                savePPMFile << boost::algorithm::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[0]) - static_cast<__int16_t>(image2.mPixels[i].rgb[0]), 0, image1.mMax) << std::endl;
+                savePPMFile << boost::algorithm::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[1]) - static_cast<__int16_t>(image2.mPixels[i].rgb[1]), 0, image1.mMax) << std::endl;
+                savePPMFile << boost::algorithm::clamp(static_cast<__int16_t>(image1.mPixels[i].rgb[2]) - static_cast<__int16_t>(image2.mPixels[i].rgb[2]), 0, image1.mMax) << std::endl;
             }
         }
         else if(image1.PType.compare("P6") == 0){
@@ -196,7 +196,7 @@ void subtractPPM(const std::string &filename, const PPM::PPMObject &image1, cons
         }
         else if(image1.PType.compare("P2") == 0){
             for(int i = 0; i < image1.size; i ++){
-                savePPMFile << static_cast<unsigned int>(image1.mPixels[i].rgb[0])  + static_cast<unsigned int>(image2.mPixels[i].rgb[0])<< std::endl;
+                savePPMFile << static_cast<__int16_t>(image1.mPixels[i].rgb[0])  + static_cast<__int16_t>(image2.mPixels[i].rgb[0])<< std::endl;
             }
         }
         else if(image1.PType.compare("P5") == 0){
